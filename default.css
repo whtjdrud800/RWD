@@ -1,0 +1,45 @@
+@charset "utf-8";/*css 앞에는 charset을 선언하는 것이 좋다.*/
+
+/* HTML reset*/
+main,
+section,
+article,
+nav,
+aside,
+header,
+footer,
+figure,
+figcaption{
+    display: block;
+}
+
+html,
+body{
+    min-height: 100%;
+}
+
+
+
+/* ALL - 공용 스타일*/
+
+body{
+    margin:0;
+    min-width: 320px;
+    max-width: 1280px;
+    background-image: -webkit-liner-gradient(top, #ccc, #fff);
+    background-image: -moz-liner-gradient(top, #ccc, #fff);
+    background-image: -o-liner-gradient(top, #ccc, #fff);
+    background-image: -ms-liner-gradient(top, #ccc, #fff);    
+    background-image: linear-gradient(to bottom, #ccc, #fff);
+    
+}
+
+
+/* Mobile */
+
+/* Tablet& Desktop */
+
+/* Tablet */
+
+
+/*Desktop*/

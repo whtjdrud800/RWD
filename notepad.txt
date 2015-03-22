@@ -1,0 +1,42 @@
+﻿마크업? , 어뷰징?  글로벌네비게이션, CDN, 파싱, ie conditional comments, block 요소, inline 요소, inline-block, margin, padding
+
+컨트롤 쉬프트 방향키(줄이동), ui컴포넌트에 class 그밑에 잡다한 것은 생략
+
+.header>h2{...} /*>는 자식 선택자*/
+
+
+
+     <div class="body">
+            <main>
+                <article> </article>
+            </main>
+            <nav class="lnb">    </nav>
+            <aside class="aside"></aside>
+        </div>
+
+main은 1번만 사용 가능, 페이지의 주요내용이므로 반복되는 콘텐츠가 포함되서는 안된다.
+
+article -> main 엘리먼트 영역안에 article을 사용, 하나의 주제를 가지고 있는 완전한 콘텐츠//웹페이지 본문
+section -> 하나의 주제를 가진 섹션//공지사항
+
+
+=> article, section, nav, aside에 section in contents제목 태그를 쓰는 것이 좋다.
+
+
+
+form 컨트롤을 mapping 시켜주는 방법
+1.  <label for="search">검색</label>
+    <input type="search" name="key" id="search">
+
+2. <input type="search" name="key" title="검색">
+http://www.w3.org/TR/html5/
+
+
+    <script src="http//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"</script>
+ ->ssl보안할 경우 홈페이지 이동간 경고창을 줄수 있다. 그럴 경우 프롤토콜 생략
+  
+ <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"</script>
+but local일 경우 반드시 프로토콜을 붙여줘야 한다. 
+
+HTML5 -> IE8 하위호환성이 없기 때문에
+하위호환성을 지원하는 무료 라이브러리 http://cdnjs.com/libraries/html5shiv
