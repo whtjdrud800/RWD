@@ -47,6 +47,7 @@ main{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);<!-- x y blur color -->
+    outline:100px solid #ccc/*width에 영향을 주지 않음*/
 }
 /*  >  자식선택자 */
 main>article{
@@ -103,14 +104,16 @@ main>article:first-child{
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 0 4px rgba(0,0,0,.5);
-    border-bottom: 1px solid;
+    padding: 0 15px;
+    outline : 1px solid #ccc;
+    overflow:hidden;
 }
 
 .aside>h2{
     margin:0;
     font-size:14px;
     line-height: 32px;
-    border-bottom: 1px solid #ccc;
+    padding-bottom: 1px solid #ccc;
 }
 
 .aside>ul{
@@ -122,11 +125,66 @@ main>article:first-child{
     margin: 10px 0;
     
 }
-/* Mobile */
+.search>input{
+    margin: 1px solid #ccc;
+    height:32px;
+    padding-left:5px;
+    
+}
 
-/* Tablet& Desktop */
+.searcg>button{
+    background: #fff;
+    border:1px solid #ccc;
+    height: 32px;
+    width:50px;
+}
+
+
+
+
+/* Mobile */
+    
+.root{
+    margin: 0 10px;
+}
+
+main,
+.lnb,
+.aside{
+    margin-bottom:15px;
+}
+
+.search{
+    margin: 15px 0;
+    padding-right:60px;
+    position:relative;
+}
+.search>input{
+    width:100%
+}
+.search>button{
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+    /* Tablet& Desktop */
+    @media (min-width:768px){
+        .root{
+            background: red;
+        }
+}
 
 /* Tablet */
 
-
+@media (min-width:768px) and (max-width:1024px){
+    .root{
+        background: green;
+    }
+}
 /*Desktop*/
+@media(min-width:1025px){
+    .root{
+        background: blue;
+    }
+}
